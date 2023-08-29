@@ -1,2 +1,2 @@
-python builder.bat
+python builder.py
 pause
