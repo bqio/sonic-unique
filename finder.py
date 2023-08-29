@@ -17,6 +17,10 @@ def finder() -> None:
         print("Error: txt files not found. Create txt directory and put their into.")
         exit(1)
 
+    if os.path.exists(BUNDLE_NAME):
+        print("Error: Bundle already exists. Remove his before.")
+        exit(1)
+
     for txt_file in txt_files:
         with open(txt_file, "r", encoding=BUNDLE_ENCODING) as fp:
             text_data = fp.read()
