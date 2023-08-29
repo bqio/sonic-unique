@@ -1,1 +1,2 @@
 python finder.py
+pause
